@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root{
+  --red:#b63a25;
+  --wite: #fff;
+  --dark:#1e1c2a;
+}
+
+body{
+  color: var(--dark);
+  background: var(--wite);
+}
+
+.navegacao{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  box-shadow: 0 0.1rem 0.5rem #ccc;
+  width: 100%;
+  background: var(--wite);
+  transition: a11 0.5s;
+}
+
+.logo{
+  width: 12%;
+}
+
+.navegacao ul{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navegacao ul li a{
+  color: var(--dark);
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.navegacao ul li a:hover{
+  color: var(--wite);
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 15px;
+  background-color:var(--red);
+}
+
+.navegacao i{
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.menu{
+  cursor: pointer;
+  display: none;
+}
+
+.menu .bar{
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--dark);
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+  background: var(--red);
+}
+
+.titulo{
+  max-width: 800px;
+}
+
+.imag-home{
+  max-width: 55%;
+}
+
+.container{
+  max-width: 1440px;
+  padding: 100%; 
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 132px);
+  padding: 0 30px 30px;
+}
+
+.container p{
+  align-items: center;
+  margin: auto;
+margin-bottom: 4%;
+}
+
+.container .cadastro{
+  background-color: rgb(160, 11, 11);
+  color: #ffffff;
+  padding: 11px;
+  font-size: 20px;
+  font-family:var(--wite);
+  cursor: pointer;
+  border: none;
+  transition: 0.5s all ease-in-out;
+  border-radius: 0% 50%;
+  margin-top: 50px;
+  width: 70%;
+  margin: 10%;
+}
+
+.container .cadastro:hover{
+  transform: scale(1.1);
+}
+
+.container .titulo{
+  width: 85%;
+  font-size: 18px;
+}
+.nav-tem{
+  margin-top: 70px;
+  text-align: center;
+  padding: auto;
+}
